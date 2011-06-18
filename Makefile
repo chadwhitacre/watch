@@ -2,13 +2,13 @@
 #
 
 VERSION      := 0
-SUBVERSION   := 2
+SUBVERSION   := 3
 MINORVERSION := 0
 
 OWNER=root
 GROUP=wheel
 CTAGS= ctags -x >tags
-LDFLAGS= -s -lncurses
+LDFLAGS= -lncurses
 CFLAGS= -O2 -s
 CC=gcc
 GET=co
@@ -41,4 +41,4 @@ depend: $(SRCS)
 
 # clean out the dross
 clean:
-	-rm watch tags
+	-rm -f watch tags

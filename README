@@ -1,8 +1,10 @@
 ABOUT
+    
     This package contains the 'watch' command line program
     from the 'procps' Linux utilities package, slightly
     modified and tweaked to run on Mac OS X by Sveinbjorn
-    Thordarson <sveinbt@hi.is>.
+    Thordarson <sveinbt@hi.is> and Chad Whitacre <chad@zetaweb.com>.
+
 
 COMPATIBILITY
 
