@@ -1,0 +1,60 @@
+ABOUT
+    This package contains the 'watch' command line program
+    from the 'procps' Linux utilities package, slightly
+    modified and tweaked to run on Mac OS X by Sveinbjorn
+    Thordarson <sveinbt@hi.is>.
+
+COMPATIBILITY
+
+    This package has been tested on Mac OS X 10.3 and 10.4,
+    but should in theory work on any Mac OS X installation
+    which includes the ncurses library.
+
+INSTALLATION
+
+    In order to install this program, you should run the
+    following commands from the source directory:
+
+    make
+    sudo make install
+
+    The default installation path is /usr/local/bin/ for the
+    'watch' application binary, and /usr/share/man/man1 for 
+    the 'watch' manpage.  /usr/local/bin is not included in
+    the default Mac OS X path, so you may have to add it to
+    your shell initialization script (typically, ~/.profile)
+    To change the installation paths, you must edit the 
+    Makefile manually.
+
+PACKAGING
+
+    If you are a downstream maintainer (packager) of any sort,
+    please avoid causing troubles. This section applies to you.
+
+    Send patches in regularly. Many patches made by vendors have been buggy,
+    some quite severely so. Sending in a patch will at least get it reviewed,
+    if not included. There is a procps test suite that must be passed.
+    Forward all bug reports. If your bug database is public and busy enough
+    to bother with, please make this known. Follow Debian's lead in making
+    the bug database easy to comment on via email w/o need for an account.
+
+    Do not change the user interface. Many of the programs are intended to be
+    compatible with Solaris, FreeBSD, AIX, IRIX, Tru64, and the UNIX standard.
+    Your nice new command options WILL BE BROKEN as needed to ensure that
+    procps remains compatible with the rest of the world. Sysadmins hate to
+    deal with incompatible behavior. If you need a new option, ask for it.
+
+    For normal packages, ensure that you do not add debugging flags
+    to the CFLAGS variable. If debugging flags are present, the Makefile
+    will avoid adding several optimizations that would interfere with gdb.
+
+    There should be no need to modify the Makefile. You can set variables
+    on the "make" command line or use "make -e" to pass variables from
+    the environment.
+
+BUG REPORTS
+
+    For bugs relating to this particular package, email Sveinbjorn Thordarson <sveinbt@hi.is>
+    Debian users should use the Debian bug tracking system.
+    Email to albert@users.sf.net or csmall@debian.org or
+    procps-feedback@lists.sf.net will also work.
